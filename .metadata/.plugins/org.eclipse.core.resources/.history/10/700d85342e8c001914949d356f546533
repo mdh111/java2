@@ -1,0 +1,22 @@
+package Calculator.Mike2;
+import java.awt.*;
+import java.awt.event.*;
+public class NumberListener implements ActionListener{
+	
+	TextField t;
+	
+	public NumberListener(TextField text) {
+		t = text;
+	}
+
+	public void actionPerformed(ActionEvent e) {
+		int num = 0;
+		Button btn = (Button) e.getSource();
+		String ctrl = btn.getLabel();
+		num = Integer.parseInt(ctrl);
+		t.setText(t.getText() + btn.getLabel());
+		
+	}
+	
+
+}

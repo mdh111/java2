@@ -1,0 +1,23 @@
+package Calculator2.Mike3;
+
+import java.awt.event.*;
+import java.awt.*;
+
+public class EHandler implements ActionListener {
+	
+	TextField no1,no2;
+	
+	public EHandler(TextField a, TextField b) {
+		no1 = a;
+		no2 = b;
+	}
+
+	public void actionPerformed(ActionEvent e) {
+		int a=0;
+		int b=0;
+		a = Integer.parseInt(no1.getText());
+		b = Integer.parseInt(no2.getText());
+		
+	}
+
+}

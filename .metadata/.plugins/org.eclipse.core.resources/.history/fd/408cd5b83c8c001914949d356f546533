@@ -1,0 +1,45 @@
+package Calculator.Mike2;
+import java.awt.*;
+import java.awt.event.*;
+public class OperationListener implements ActionListener{
+	
+	TextField t;
+	int no1=0;
+	String operation = "";
+	
+	public OperationListener(TextField text) {
+		t = text;
+	}
+
+	public void actionPerformed(ActionEvent e) {
+		Button btn = (Button) e.getSource();
+		String op = btn.getLabel();
+		if(op.contentEquals("c")) {
+			t.setText("");
+		} else if(op.equals("+") || op.equals("-") || op.equals("/") || op.equals("x")) {
+			no1 = Integer.parseInt(t.getText());
+			t.setText("");
+			operation = op;
+	
+		} else if(op.equals("=")) {
+			double result=0;
+			if(operation.equals("+")) {
+				result = no1 + Integer.parseInt(t.getText());
+			}
+			if(operation.equals("-")) {
+				result = no1 - Integer.parseInt(t.getText());
+			}
+			if(operation.equals("/")) {
+				result = (double) no1 / Integer.parseInt(t.getText());
+			}
+			if(operation.equals("x")) {
+				result = no1 * Integer.parseInt(t.getText());
+			}
+			t.setText(Double.toString(result));
+			no1=0;
+			operation = "";
+		}
+	}
+	
+
+}

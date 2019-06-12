@@ -1,0 +1,50 @@
+package Calculator2.Mike3;
+
+import java.awt.*;
+
+public class Calc {
+
+	public static void main(String[] args) {
+		Frame f = new Frame("Another Calculator!");
+		Panel p = new Panel();
+		GridLayout g = new GridLayout(6,2);
+		p.setLayout(g);
+		
+		Label firstLabel = new Label("First number:");
+		Label secondLabel = new Label("Second number:");
+		Label resultLabel = new Label("Result:");
+		Label blankLabel = new Label("");
+		Label blank2Label = new Label("");
+		Label blank3Label = new Label("");
+		TextField firstText = new TextField(10);
+		TextField secondText = new TextField(10);
+		TextField resultText = new TextField(10);
+		Button calcButton = new Button("Calculate");
+		
+		CheckboxGroup checkBoxGroup = new CheckboxGroup();
+		Checkbox addBox = new Checkbox("Addition",checkBoxGroup,true);
+		Checkbox subBox = new Checkbox("Subtraction",checkBoxGroup,false);
+		
+		p.add(firstLabel);
+		p.add(firstText);
+		p.add(secondLabel);
+		p.add(secondText);
+		p.add(blankLabel);
+		p.add(addBox);
+		p.add(blank2Label);
+		p.add(subBox);
+		p.add(blank3Label);
+		p.add(calcButton);
+		p.add(resultLabel);
+		p.add(resultText);
+		
+		EHandler e = new EHandler(firstText, secondText, checkBoxGroup);
+		calcButton.addActionListener(e);
+		System.out.println(checkBoxGroup.getSelectedCheckbox().getLabel());
+		
+		f.add(p,BorderLayout.CENTER);
+		f.setSize(200,200);
+		f.setVisible(true);
+	}
+
+}

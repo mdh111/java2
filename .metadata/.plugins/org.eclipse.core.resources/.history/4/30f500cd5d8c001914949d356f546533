@@ -1,0 +1,27 @@
+package Calculator2.Mike3;
+
+import java.awt.event.*;
+import java.awt.*;
+
+public class EHandler implements ActionListener {
+	
+	TextField no1,no2;
+	CheckboxGroup checkbox;
+	
+	public EHandler(TextField a, TextField b, CheckboxGroup c) {
+		no1 = a;
+		no2 = b;
+		checkbox = c;
+	}
+
+	public void actionPerformed(ActionEvent e) {
+		int a=0;
+		int b=0;
+		String c = "";
+		a = Integer.parseInt(no1.getText());
+		b = Integer.parseInt(no2.getText());
+		c = checkbox.getSelectedCheckbox().getLabel();
+		
+	}
+
+}

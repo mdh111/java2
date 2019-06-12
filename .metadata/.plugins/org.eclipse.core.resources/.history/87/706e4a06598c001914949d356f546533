@@ -1,0 +1,16 @@
+package TTD.Mike4;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class First {
+
+	@Test
+	public void test1() {
+		if(result!=4) {
+			fail("Not yet implemented");	
+		}
+	}
+
+}
