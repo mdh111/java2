@@ -26,16 +26,19 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="NationwideSchool.Mike5"/>
 			<item value="TTD.Mike4"/>
 			<item value="Calculator2.Mike3"/>
 			<item value="Calculator.Mike2"/>
 		</list>
 		<list key="groupId">
+			<item value="NationwideSchool"/>
 			<item value="TTD"/>
 			<item value="Calculator2"/>
 			<item value="Calculator"/>
 		</list>
 		<list key="artifactId">
+			<item value="Mike5"/>
 			<item value="Mike4"/>
 			<item value="Mike3"/>
 			<item value="Mike2"/>
