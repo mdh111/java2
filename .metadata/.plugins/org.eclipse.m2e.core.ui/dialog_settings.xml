@@ -2,6 +2,8 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\Mike\eclipse-workspace\Mike6\src\test\java\DatabaseInsert\Mike6\WinHandler.java"/>
+			<item value="C:\Users\Mike\eclipse-workspace\Mike5"/>
 			<item value="C:\Users\Mike\eclipse-workspace\Mike3\pom.xml"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -26,18 +28,24 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="Scanner.Mike7"/>
+			<item value="DatabaseInsert.Mike6"/>
 			<item value="NationwideSchool.Mike5"/>
 			<item value="TTD.Mike4"/>
 			<item value="Calculator2.Mike3"/>
 			<item value="Calculator.Mike2"/>
 		</list>
 		<list key="groupId">
+			<item value="Scanner"/>
+			<item value="DatabaseInsert"/>
 			<item value="NationwideSchool"/>
 			<item value="TTD"/>
 			<item value="Calculator2"/>
 			<item value="Calculator"/>
 		</list>
 		<list key="artifactId">
+			<item value="Mike7"/>
+			<item value="Mike6"/>
 			<item value="Mike5"/>
 			<item value="Mike4"/>
 			<item value="Mike3"/>
